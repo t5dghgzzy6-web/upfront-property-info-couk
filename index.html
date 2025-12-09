@@ -17,18 +17,28 @@
             <div class="header-content">
                 <div class="logo">
                     <svg width="200" height="40" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Shield icon representing legal/professional trust -->
-                        <g id="shield-icon">
-                            <path d="M20 5 L12 8 L12 18 Q12 25 20 30 Q28 25 28 18 L28 8 Z" 
-                                  fill="#00B8A9" opacity="0.2"/>
-                            <path d="M20 7 L14 9.5 L14 18 Q14 23.5 20 27.5 Q26 23.5 26 18 L26 9.5 Z" 
-                                  fill="none" stroke="#00B8A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M17 18 L19.5 20.5 L24 16" 
-                                  fill="none" stroke="#00B8A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="legal-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#00B8A9;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0A2342;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Modern hexagonal data pattern -->
+                        <g id="hex-pattern">
+                            <!-- Center hex -->
+                            <polygon points="20,12 24,14.5 24,19.5 20,22 16,19.5 16,14.5" 
+                                     fill="url(#legal-gradient)" opacity="0.9"/>
+                            <!-- Surrounding hexes (data nodes) -->
+                            <polygon points="20,22 24,24.5 24,27 20,29 16,27 16,24.5" 
+                                     fill="#00B8A9" opacity="0.4"/>
+                            <polygon points="12,17 16,19.5 16,22 12,24 8,22 8,19.5" 
+                                     fill="#00B8A9" opacity="0.3"/>
+                            <polygon points="28,17 32,19.5 32,22 28,24 24,22 24,19.5" 
+                                     fill="#00B8A9" opacity="0.3"/>
                         </g>
                         <!-- Text -->
-                        <text x="35" y="16" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#0A2342">Upfront</text>
-                        <text x="35" y="28" font-family="Inter, sans-serif" font-size="8" font-weight="500" fill="#00B8A9" letter-spacing="0.5">PROPERTY INFORMATION</text>
+                        <text x="40" y="16" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#0A2342">Upfront</text>
+                        <text x="40" y="28" font-family="Inter, sans-serif" font-size="7.5" font-weight="600" fill="#00B8A9" letter-spacing="1">PROPERTY INFORMATION</text>
                     </svg>
                 </div>
                 <nav class="nav">
